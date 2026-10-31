@@ -9,7 +9,7 @@
 **Aluno:** Guilherme Cintra Doraciotto  
 **RA:** 200376  
 **Curso:** Análise e Desenvolvimento de Sistemas — Facens  
-**Disciplina:** Teste de Software / UI/UX (confirmar nome oficial no Canvas)  
+**Disciplina:** Teste de Software (confirmar nomenclatura oficial na plataforma da faculdade)  
 **Professor:** Daniel Ohata  
 **Semestre:** 2026.2
 
@@ -44,8 +44,8 @@ Legibilidade, testes repetíveis, tratamento de erros, documentação JavaDoc, v
 
 | Tecnologia | Versão | Utilização |
 |---|---|---|
-| Java / JDK | Preencher com `java -version` | Compilação e execução |
-| Git | Preencher com `git --version` | Controle de versão |
+| Java / JDK | 17.0.18 | Compilação e execução |
+| Git | Git (GitHub Desktop; consultar versão com `git --version`) | Controle de versão |
 | GitHub | Plataforma web | Repositório remoto |
 | JavaDoc | Incluído no JDK | Documentação HTML |
 | IDE | VS Code | Desenvolvimento |
@@ -76,24 +76,31 @@ O método `calc(int a, int b, String op)` devolve `double`. Divisão por zero e 
 
 Execute `TESTAR.bat`. São avaliados soma, subtração, multiplicação, divisão, divisão por zero, operador inválido e operador nulo.
 
-**Evidência a adicionar após executar:**  
-`![Testes executados](images/testes/testes-01_inicial.png)`
+**Resultado da execução inicial:** 7 testes aprovados e 0 reprovados.
+
+![Testes antes da refatoração](images/testes/testes_antes_refatoracao.png)
 
 ## 11. Refatoração
 
 A versão inicial usa condicionais encadeadas. Na branch `Refatoracao`, a lógica é reorganizada com `switch` e métodos separados. Os mesmos testes devem ser executados novamente para verificar a manutenção do comportamento.
 
-**Evidência a adicionar:** print do histórico de commits e da branch `Refatoracao` em `images/refatoracao/`.
+**Resultado após refatoração:** 7 testes aprovados e 0 reprovados.
+
+![Testes após refatoração](images/refatoracao/testes_depois_refatoracao.png)
+
+Compare as branches `main` e `Refatoracao` no histórico do GitHub para visualizar as mudanças no código.
 
 ## 12. Documentação JavaDoc
 
 Execute `GERAR_JAVADOC.bat` e abra `docs/index.html`.
 
-**Evidência a adicionar:** `![JavaDoc](images/javadoc/javadoc.png)`.
+![JavaDoc gerado](images/javadoc/javadoc_refatorado.png)
+
+[Consultar documentação JavaDoc](docs/index.html).
 
 ## 13. Repositório
 
-**URL:** INSERIR_LINK_DO_SEU_REPOSITORIO_GITHUB
+**URL:** https://github.com/Cintragui/projeto_calculadora
 
 **Branches:** `main` e `Refatoracao`.
 
